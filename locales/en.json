@@ -1,0 +1,12 @@
+{
+    "spam": "don't be in such a hurry!",
+    "nbcops": "come back later",
+    "soldped": "I have what I need, leave me !",
+    "nospace": "your pockets are full !",
+    "noitem": "you don't have any on you",
+    "harvest": "you collected ",
+    "craft": "you made ",
+    "craftnoitem": "lack of ingredients",
+    "sell": "you have sold ",
+    "selllspd": "ongoing drug sale"
+}

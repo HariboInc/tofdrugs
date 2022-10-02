@@ -3,6 +3,11 @@
 * resmon 0.00 to 0.02ms
 * fully configurable
 
+* video preview : 
+
+* Forum about this script : 
+* Discord : https://discord.gg/B45FXcrqCt
+
 # Dependencies
 * ESX Legacy
 * ox_lib
@@ -19,7 +24,7 @@
 
 * weed / opium / lean / cocaine / lsd / ecstasy / meth
 
-# Recicpes
+# Recipes
 
 * lean = codeine + ice (sell in maket) + sprunk (sell in market)
 * cocaine = cocaleaves + gasoline + solvent
@@ -50,6 +55,8 @@
 
 # drugsconfig.lua
 
+* alert cops for NPC sells are configurable
+* minimum of cops needed to harvest | craft | sell to narcos | sell to npc
 ```
 ---------------------------------------------------
 -------------- general parameters -----------------
@@ -125,3 +132,108 @@ drugscraft = {
     -------------------------------------------------------------------------------------------------------------------------------------------------
 }
 ```
+
+## Recipes
+
+* you can modify all the fields
+* if you set ped = true then the marker is replace by the ped
+* you can modify marker id etc.
+* never delete item fields even if they are empty ' '
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------- config craft recipes -------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+drugscraftrecipes = {
+    ------------------------------------------------------------------------ Lean -------------------------------------------------------------------
+    {itemfinal = 'drug_lean', itemfinallabel = 'Lean', qtyfinal = 6, item1 = 'codeine', item2 = 'ice', item3 = 'drink_sprunk', item4 = '', item5 = '', item6 = '', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 0, qty5 = 0, qty6 = 0},
+    ----------------------------------------------------------------------- Cocaine -----------------------------------------------------------------
+    {itemfinal = 'drug_cocaine', itemfinallabel = 'Cocaine', qtyfinal = 6, item1 = 'cocaleaves', item2 = 'gasoline', item3 = 'solvent', item4 = '', item5 = '', item6 = '', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 0, qty5 = 0, qty6 = 0},
+    ----------------------------------------------------------------------- LSD ---------------------------------------------------------------------
+    {itemfinal = 'drug_lsd', itemfinallabel = 'LSD', qtyfinal = 6, item1 = 'carbon', item2 = 'hydrogen', item3 = 'oxygen', item4 = 'nitrogen', item5 = '', item6 = '', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 6, qty5 = 0, qty6 = 0},
+    -------------------------------------------------------------------- Ecstasy --------------------------------------------------------------------
+    {itemfinal = 'drug_ecstasy', itemfinallabel = 'Ecstasy', qtyfinal = 6, item1 = 'carbon', item2 = 'hydrogen', item3 = 'oxygen', item4 = 'nitrogen', item5 = 'jolly_ranchers', item6 ='', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 6, qty5 = 6, qty6 = 0},
+    ---------------------------------------------------------------------- Meth ---------------------------------------------------------------------
+    {itemfinal = 'drug_meth', itemfinallabel = 'Methamphetamine', qtyfinal = 6, item1 = 'red_sulfur', item2 = 'liquid_sulfur', item3 = 'muriatic_acid', item4 = 'ammonium_nitrate', item5 = 'sodium_hydroxide', item6 = 'pseudoefedrine', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 6, qty5 = 6, qty6 = 6},
+    -------------------------------------------------------------------------------------------------------------------------------------------------
+}
+```
+
+## Sell to Narcos (wholesaler)
+
+* you can modify all the fields
+* if you set ped = true then the marker is replace by the ped
+* you can modify marker id etc.
+* never delete item fields even if they are empty ' '
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------- config sell items --------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+drugssellnarcos = {
+    ------------------------------------------------------------------------ Lean -------------------------------------------------------------------
+    {itemsell = 'drug_cannabis', itemselllabel = 'Weed', pricemin = 40, pricemax = 50, qtysell = 100, timetosell = 60000, coordsell = {x = -1691.27, y = -1071.257, z = 1.831, h = 141.732}, ped = true, typeped = 'a_m_m_og_boss_01', markerid = 31},
+    ----------------------------------------------------------------------- Opium -------------------------------------------------------------------
+    {itemsell = 'drug_opium', itemselllabel = 'Opium', pricemin = 50, pricemax = 60, qtysell = 100, timetosell = 60000, coordsell = {x = -298.852, y = -2768.716, z = 2.185, h = 320.314}, ped = true, typeped = 'a_m_o_salton_01', markerid = 31},
+    ----------------------------------------------------------------------- Lean ---------------------------------------------------------------------
+    {itemsell = 'drug_lean', itemselllabel = 'Lean', pricemin = 100, pricemax = 120, qtysell = 100, timetosell = 60000, coordsell = {x = 1554.197, y = -2710.193, z = 3.88, h = 124.724}, ped = true, typeped = 'a_m_y_genstreet_01', markerid = 31},
+    ---------------------------------------------------------------------- Cocaine -------------------------------------------------------------------
+    {itemsell = 'drug_cocaine', itemselllabel = 'Cocaine', pricemin = 150, pricemax = 180, qtysell = 100, timetosell = 60000, coordsell = {x = 2771.432, y = -727.147, z = 7.830, h = 218.267}, ped = true, typeped = 'a_m_y_genstreet_0', markerid = 31},
+    -------------------------------------------------------------------------- LSD -------------------------------------------------------------------
+    {itemsell = 'drug_lsd', itemselllabel = 'LSD', pricemin = 280, pricemax = 320, qtysell = 100, timetosell = 60000, coordsell = {x = 3760.839, y = 4580.545, z = 3.516, h = 256.118}, ped = true, typeped = 'a_m_y_mexthug_01', markerid = 31},
+    ---------------------------------------------------------------------- Ecstasy -------------------------------------------------------------------
+    {itemsell = 'drug_ecstasy', itemselllabel = 'Ecstasy', pricemin = 300, pricemax = 360, qtysell = 100, timetosell = 60000, coordsell = {x = 1579.305, y = 6663.046, z = 2.792, h = 59.527}, ped = true, typeped = 'a_m_y_vindouche_01', markerid = 31},
+    -------------------------------------------------------------------------- Meth -------------------------------------------------------------------
+    {itemsell = 'drug_meth', itemselllabel = 'Methamphetamine', pricemin = 400, pricemax = 480, qtysell = 100, timetosell = 60000, coordsell = {x = -2279.802, y = 4394.320, z = 17.097, h = 79.370}, ped = true, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    --------------------------------------------------------------------------------------------------------------------------------------------------
+}
+```
+
+## Sell to NPC
+
+* anti spam function
+* control the type of ped
+* control if the ped is a player
+* control if the ped is dead or dying
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------- config sell items --------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+drugssellNPC = {
+    ------------------------------------------------------------------------ Weed -------------------------------------------------------------------
+    {itemsell = 'drug_cannabis', itemselllabel = 'Weed', pricemin = 75, pricemax = 90, timetosell = 15000},
+    ----------------------------------------------------------------------- Opium -------------------------------------------------------------------
+    {itemsell = 'drug_opium', itemselllabel = 'Opium', pricemin = 80, pricemax = 95, timetosell = 15000},
+    ----------------------------------------------------------------------- Lean ---------------------------------------------------------------------
+    {itemsell = 'drug_lean', itemselllabel = 'Lean', pricemin = 180, pricemax = 250, timetosell = 15000},
+    ---------------------------------------------------------------------- Cocaine -------------------------------------------------------------------
+    {itemsell = 'drug_cocaine', itemselllabel = 'Cocaine', pricemin = 300, pricemax = 350, timetosell = 15000},
+    -------------------------------------------------------------------------- LSD -------------------------------------------------------------------
+    {itemsell = 'drug_lsd', itemselllabel = 'LSD', pricemin = 550, pricemax = 650, timetosell = 15000},
+    ---------------------------------------------------------------------- Ecstasy -------------------------------------------------------------------
+    {itemsell = 'drug_ecstasy', itemselllabel = 'Ecstasy', pricemin = 650, pricemax = 750, timetosell = 15000},
+    -------------------------------------------------------------------------- Meth -------------------------------------------------------------------
+    {itemsell = 'drug_meth', itemselllabel = 'Methamphetamine', pricemin = 900, pricemax = 1050, timetosell = 15000},
+    --------------------------------------------------------------------------------------------------------------------------------------------------
+ }
+```
+
+# Locales (Translations) - /locales/en.json
+
+```
+{
+    "spam": "don't be in such a hurry!",
+    "nbcops": "come back later",
+    "soldped": "I have what I need, leave me !",
+    "nospace": "your pockets are full !",
+    "noitem": "you don't have any on you",
+    "harvest": "you collected ",
+    "craft": "you made ",
+    "craftnoitem": "lack of ingredients",
+    "sell": "you have sold ",
+    "selllspd": "ongoing drug sale"
+}
+```
+
+

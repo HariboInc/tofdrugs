@@ -5,7 +5,7 @@
 
 * video preview : https://www.youtube.com/watch?v=sB36wxi3juY
 
-* Forum about this script : 
+* Forum about this script : https://forum.cfx.re/t/free-complete-drugs-system-esx-legacy-0-00ms-to-0-02ms/4919524
 * Discord : https://discord.gg/B45FXcrqCt
 
 # Dependencies

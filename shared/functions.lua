@@ -345,7 +345,8 @@ function dispatch(xPlayer, item, act, timer)
             for z = 1,#drugsharvest,1 do
                 if itemact == drugsharvest[z].item then
                     if xPlayer.canCarryItem(itemact, drugsharvest[z].harvestqty) then
-                        TriggerClientEvent('tofdrugs:animharvest', timer, itemact)
+                        TriggerClientEvent('tofdrugs:animharvest', xPlayer.source, timer, itemact)
+                        TriggerClientEvent('tofdrugs:timeranim', xPlayer.source, timer)
                         Citizen.Wait(timer)
                         xPlayer.addInventoryItem(itemact, drugsharvest[z].harvestqty)
                         TriggerClientEvent('tofdrugs:msgharvest', xPlayer.source, drugsharvest[z].itemlabel, drugsharvest[z].harvestqty)

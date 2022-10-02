@@ -515,24 +515,24 @@ function dispatch(xPlayer, item, act, timer)
                         TriggerClientEvent('tofdrugs:timeranim', xPlayer.source, timer)
                         Citizen.Wait(timer)
                         if item1remove == 'ok' then
-                            xPlayer.removeInventoryItem(xPlayer.source, drugscraftrecipes[x].item1, drugscraftrecipes[x].qty1)
+                            xPlayer.removeInventoryItem(drugscraftrecipes[x].item1, drugscraftrecipes[x].qty1)
                         end
                         if item2remove == 'ok' then
-                            xPlayer.removeInventoryItem(xPlayer.source, drugscraftrecipes[x].item2, drugscraftrecipes[x].qty2)
+                            xPlayer.removeInventoryItem(drugscraftrecipes[x].item2, drugscraftrecipes[x].qty2)
                         end
                         if item3remove == 'ok' then
-                            xPlayer.removeInventoryItem(xPlayer.source, drugscraftrecipes[x].item3, drugscraftrecipes[x].qty3)
+                            xPlayer.removeInventoryItem(drugscraftrecipes[x].item3, drugscraftrecipes[x].qty3)
                         end
                         if item4remove == 'ok' then
-                            xPlayer.removeInventoryItem(xPlayer.source, drugscraftrecipes[x].item4, drugscraftrecipes[x].qty4)
+                            xPlayer.removeInventoryItem(drugscraftrecipes[x].item4, drugscraftrecipes[x].qty4)
                         end
                         if item5remove == 'ok' then
-                            xPlayer.removeInventoryItem(xPlayer.source, drugscraftrecipes[x].item5, drugscraftrecipes[x].qty5)
+                            xPlayer.removeInventoryItem(drugscraftrecipes[x].item5, drugscraftrecipes[x].qty5)
                         end
                         if item6remove == 'ok' then
-                            xPlayer.removeInventoryItem(xPlayer.source, drugscraftrecipes[x].item6, drugscraftrecipes[x].qty6)
+                            xPlayer.removeInventoryItem(drugscraftrecipes[x].item6, drugscraftrecipes[x].qty6)
                         end
-                        xPlayer.addInventoryItem(xPlayer.source, drugscraftrecipes[x].itemfinal, drugscraftrecipes[x].qtyfinal)
+                        xPlayer.addInventoryItem(drugscraftrecipes[x].itemfinal, drugscraftrecipes[x].qtyfinal)
                         TriggerClientEvent('tofdrugs:msgcraft', xPlayer.source, drugscraftrecipes[x].itemfinallabel, drugscraftrecipes[x].qtyfinal)
                     else
                         TriggerClientEvent('tofdrugs:msgcraftnoitem', xPlayer.source)

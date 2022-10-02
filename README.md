@@ -36,6 +36,11 @@
 
 * drug_cannabis
 * drug_opium
+* drug_lean
+* drug_cocaine
+* drug_lsd
+* drug_ecstasy
+* drug_meth
 * codein
 * cocaleaves
 * gasoline

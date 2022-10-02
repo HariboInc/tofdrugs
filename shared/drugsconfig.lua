@@ -77,7 +77,7 @@ drugscraft = {
 
 drugscraftrecipes = {
     ------------------------------------------------------------------------ Lean -------------------------------------------------------------------
-    {itemfinal = 'drug_lean', itemfinallabel = 'Lean', qtyfinal = 6, item1 = 'codeine', item2 = 'ice', item3 = 'drink_sprunk', item4 = '', item5 = '', item6 = '', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 0, qty5 = 0, qty6 = 0},
+    {itemfinal = 'drug_lean', itemfinallabel = 'Lean', qtyfinal = 6, item1 = 'codein', item2 = 'ice', item3 = 'drink_sprunk', item4 = '', item5 = '', item6 = '', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 0, qty5 = 0, qty6 = 0},
     ----------------------------------------------------------------------- Cocaine -----------------------------------------------------------------
     {itemfinal = 'drug_cocaine', itemfinallabel = 'Cocaine', qtyfinal = 6, item1 = 'cocaleaves', item2 = 'gasoline', item3 = 'solvent', item4 = '', item5 = '', item6 = '', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 0, qty5 = 0, qty6 = 0},
     ----------------------------------------------------------------------- LSD ---------------------------------------------------------------------

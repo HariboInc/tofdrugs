@@ -3,7 +3,7 @@
 * resmon 0.00 to 0.02ms
 * fully configurable
 
-* video preview : 
+* video preview : https://www.youtube.com/watch?v=sB36wxi3juY
 
 * Forum about this script : 
 * Discord : https://discord.gg/B45FXcrqCt

@@ -1,8 +1,7 @@
 # tofdrugs - a complete drugs script
 * harvest | craft | sell narcos | sell npc | drugs effects etc.
 * resmon 0.00 to 0.02ms
-
-# fully configurable
+* fully configurable
 
 # Dependencies
 * ESX Legacy
@@ -26,12 +25,28 @@
 * cocaine = cocaleaves + gasoline + solvent
 * lsd = carbon + hydrogen + nitrogen + oxygen
 * ecstasy = carbon + hydrogen + nitrogen + oxygen + jollyranchers (candies sell in market)
-* methampletamine = red sulfur + liquid sulfur + muriatic acid + ammonium nitrate + sodium hydroxide + pseudoephedrine
+* methampletamine = red sulfur + liquid sulfur + muriatic acid + ammonium nitrate + sodium hydroxide + pseudoefedrine
 
 # Items to add in items.lua(ox_inventory) or 'item' table in sql(default inventory)
 
 * drug_cannabis
-* 
+* drug_opium
+* codein
+* cocaleaves
+* gasoline
+* solvent
+* carbon
+* hydrogen
+* nitrogen
+* oxygen
+* jolly_ranchers
+* drink_sprunk
+* red_sulfur
+* liquid_sulfur
+* muriatic_acid
+* ammonium_nitrate
+* sodium_hydroxide
+* pseudoefedrine
 
 # drugsconfig.lua
 
@@ -55,4 +70,32 @@ dgsdelaycopsblip = 60000    -- config here the delay of the blip lspd when there
 
 ## Harvest items
 
+* you can modify all the fields
+* if you pass ped = true then the marker is replace by the ped
+```
+drugsharvest = {
+    ------------------------------------------------------------------------- Weed ------------------------------------------------------------------
+    {item = 'drug_cannabis', itemlabel = 'Weed', harvestqty = 6, timeharvest = 60000, coordharvest = {x = 325.19, y = 6626.65, z = 28.71, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    ------------------------------------------------------------------------- Opium -----------------------------------------------------------------
+    {item = 'drug_opium', itemlabel = 'Opium', harvestqty = 6, timeharvest = 60000, coordharvest = {x = -94.01, y = 2893.87, z = 51.58, h = 167.244}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    ------------------------------------------------------------------------- Lean ------------------------------------------------------------------
+    {item = 'codein', itemlabel = 'Codein', harvestqty = 9, timeharvest = 60000, coordharvest = {x = 157.16, y = 6657.42, z = 31.56, h = 65.196}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    ----------------------------------------------------------------------- Cocaine -----------------------------------------------------------------
+    {item = 'cocaleaves', itemlabel = 'Coca Leaves', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 3680.08, y = 4528.90, z = 24.81, h = 201.259}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    {item = 'gasoline', itemlabel = 'Gasoline', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 2758.04, y = 1478.64, z = 30.79, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    {item = 'solvent', itemlabel = 'Solvent', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 1050.85, y = -2483.52, z = 29.43, h = 351.496}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    --------------------------------------------------------------------- LSD / Ecstasy --------------------------------------------------------------
+    {item = 'carbon', itemlabel = 'Carbon', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 2632.26, y = 2935.41, z = 40.42, h = 62.362}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    {item = 'hydrogen', itemlabel = 'Hydrogen', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 561.26, y = -485.30, z = 24.98, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    {item = 'oxygen', itemlabel = 'Oxygen', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 319.33, y = -560.18, z = 28.74, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    {item = 'nitrogen', itemlabel = 'Nitrogen', harvestqty = 8, timeharvest = 60000, coordharvest = {x = -190.13, y = 6067.82, z = 31.38, h = 104.881}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+     ------------------------------------------------------------------------ Meth -------------------------------------------------------------------
+     {item = 'red_sulfur', itemlabel = 'Red Sulfur', harvestqty = 8, timeharvest = 60000, coordharvest = {x = -540.923, y = 2021.063, z = 203.007, h = 257.952}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+     {item = 'liquid_sulfur', itemlabel = 'Liquid Sulfur', harvestqty = 8, timeharvest = 60000, coordharvest = {x = -602, y = 2088.65, z = 132.69, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+     {item = 'muriatic_acid', itemlabel = 'Muriatic Acid', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 2675.7, y = 3499.38, z = 54.30, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+     {item = 'ammonium_nitrate', itemlabel = 'Ammonium Nitrate', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 3560.89, y = 3674.34, z = 28.12, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+     {item = 'sodium_hydroxide', itemlabel = 'Sodium Hydroxide', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 3538.20, y = 3660.09, z = 28.12, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+     {item = 'pseudoefedrine', itemlabel = 'pseudoefedrine', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 249.41, y = -1374.78, z = 39.53, h = 221.103}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+     -------------------------------------------------------------------------------------------------------------------------------------------------
+}
 ```

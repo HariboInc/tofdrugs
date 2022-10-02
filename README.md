@@ -71,7 +71,8 @@ dgsdelaycopsblip = 60000    -- config here the delay of the blip lspd when there
 ## Harvest items
 
 * you can modify all the fields
-* if you pass ped = true then the marker is replace by the ped
+* if you set ped = true then the marker is replace by the ped
+* you can modify marker id etc.
 ```
 drugsharvest = {
     ------------------------------------------------------------------------- Weed ------------------------------------------------------------------
@@ -97,5 +98,30 @@ drugsharvest = {
      {item = 'sodium_hydroxide', itemlabel = 'Sodium Hydroxide', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 3538.20, y = 3660.09, z = 28.12, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
      {item = 'pseudoefedrine', itemlabel = 'pseudoefedrine', harvestqty = 8, timeharvest = 60000, coordharvest = {x = 249.41, y = -1374.78, z = 39.53, h = 221.103}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
      -------------------------------------------------------------------------------------------------------------------------------------------------
+}
+```
+
+## Laboratories
+
+* you can modify all the fields
+* if you set ped = true then the marker is replace by the ped
+* you can modify marker id etc.
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------- config labos ---------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+drugscraft = {
+    ------------------------------------------------------------------------ Lean -------------------------------------------------------------------
+    {itemfinal = 'drug_lean', itemfinallabel = 'Lean', timecraft = 30000, coordcraft = {x = -1363.08, y = -756.03, z = 22.31, h = 274.960}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    ----------------------------------------------------------------------- Cocaine -----------------------------------------------------------------
+    {itemfinal = 'drug_cocaine', itemfinallabel = 'Cocaine', timecraft = 30000, coordcraft = {x = 1091.74, y = -3196.88, z = -38.99, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    ----------------------------------------------------------------------- LSD ---------------------------------------------------------------------
+    {itemfinal = 'drug_lsd', itemfinallabel = 'LSD', timecraft = 30000, coordcraft = {x = 1389.20, y = 3605.03, z = 38.94, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    ------------------------------------------------------------------- Ecstasy ---------------------------------------------------------------------
+    {itemfinal = 'drug_ecstasy', itemfinallabel = 'Ecstasy', timecraft = 30000, coordcraft = {x = 2329.04, y = 2571.28, z = 46.68, h = 0.00}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    ------------------------------------------------------------------- Meth ---------------------------------------------------------------------
+    {itemfinal = 'drug_meth', itemfinallabel = 'Methamphetamine', timecraft = 30000, coordcraft = {x = 1009.65, y = -3194.97, z = -38.99, h = 11.338}, ped = false, typeped = 'a_m_m_rurmeth_01', markerid = 31},
+    -------------------------------------------------------------------------------------------------------------------------------------------------
 }
 ```

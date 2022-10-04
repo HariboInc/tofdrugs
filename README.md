@@ -58,6 +58,175 @@
 * sodium_hydroxide
 * pseudoefedrine
 
+Copy Paste for OX Inventory items.lua
+add an description of each Item to your liking
+
+	-------------ToF_Drugs------------
+
+	['drug_cannabis'] = {
+		label = 'Cannabis',
+		weight = 100,
+		stack = true
+		description = ''
+	},
+
+	['drug_opium'] = {
+		label = 'Opium',
+		weight = 100,
+		stack = true
+		description = ''
+	},
+
+	['drug_lean'] = {
+		label = 'Lean',
+		weight = 100,
+		stack = true
+		description = ''
+	},
+
+	['drug_cocaine'] = {
+		label = 'Cocaine',
+		weight = 50,
+		stack = true
+		description = ''
+	},
+
+	['drug_lsd'] = {
+		label = 'LSD',
+		weight = 50,
+		stack = true
+		description = ''
+	},
+
+	['drug_ecstasy'] = {
+		label = 'Ecstasy',
+		weight = 100,
+		stack = true
+		description = ''
+	},
+
+	['drug_meth'] = {
+		label = 'Meth',
+		weight = 100,
+		stack = true
+		description = ''
+	},
+
+	['codein'] = {
+		label = 'Codein',
+		weight = 100,
+		stack = true
+		description = ''
+	},
+
+	['cocaleaves'] = {
+		label = 'Coca Blätter',
+		weight = 10,
+		stack = true
+		description = ''
+	},
+
+	['gasoline'] = {
+		label = 'Benzin',
+		weight = 1000,
+		stack = true
+		description = ''
+	},
+
+	['solvent'] = {
+		label = 'Lösungsmittel',
+		weight = 500,
+		stack = true
+		description = ''
+	},
+
+	['carbon'] = {
+		label = 'Carbon',
+		weight = 300,
+		stack = true
+		description = ''
+	},
+
+	['hydrogen'] = {
+		label = 'Hydrogen',
+		weight = 300,
+		stack = true
+		description = ''
+	},
+
+	['nitrogen'] = {
+		label = 'Nitrogen',
+		weight = 300,
+		stack = true
+		description = ''
+	},
+
+	['oxygen'] = {
+		label = 'Oxy',
+		weight = 300,
+		stack = true
+		description = ''
+	},
+
+	['jolly_ranchers'] = {
+		label = 'Jolly Ranchers',
+		weight = 300,
+		stack = true
+		description = ''
+	},
+
+	['drink_sprunk'] = {
+		label = 'Sprunk',
+		weight = 350,
+		stack = true
+		description = ''
+	},
+
+	['red_sulfur'] = {
+		label = 'Red Sulfur',
+		weight = 500,
+		stack = true
+		description = ''
+	},
+
+	['liquid_sulfur'] = {
+		label = 'Liquid Sulfur',
+		weight = 500,
+		stack = true
+		description = ''
+	},
+
+	['muriatic_acid'] = {
+		label = 'Salzsäure',
+		weight = 500,
+		stack = true
+		description = ''
+	},
+
+	['ammonium_nitrate'] = {
+		label = 'Ammonium Nitrate',
+		weight = 50,
+		stack = true
+		description = ''
+	},
+
+	['sodium_hydroxide'] = {
+		label = 'Sodium Hydroxide',
+		weight = 50,
+		stack = true
+		description = ''
+	},
+
+	['pseudoefedrine'] = {
+		label = 'Pseudoephedrine',
+		weight = 50,
+		stack = true
+		description = ''
+	},
+
+	--^^^^^^^^^^ToF_Drugs^^^^^^^^^^--
+
+
 # drugsconfig.lua
 
 * alert cops for NPC sells are configurable

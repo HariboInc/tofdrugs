@@ -17,7 +17,7 @@
 
 # Install
 
-* Put the ressource tofdrugs in your 'resources' and start it in the server.cfg
+* Put the ressource tofdrugs in your 'resources' and start it in the server.cfg, then restart your server.
 * ox_lib, qtarget, polyzone and ox_inventory must start before tofdrugs.
 
 # Drugs
